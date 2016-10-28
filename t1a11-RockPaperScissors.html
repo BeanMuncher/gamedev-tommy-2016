@@ -1,0 +1,78 @@
+<h1 align=center  >T1A11-Rock-Paper-Scissors-Tommy.html</h2>
+
+
+Attempts: <input type=text id="myAttempts" value=0>
+
+<br> 
+
+<h1 align=center  ><div id="myOut">Output here</div></h2>
+ 
+<br>
+<input type="image" id="myimage" src="my OC.png" width = 400 onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 1){
+   document.myOutcome = 'Your opponent plays rock against your rock, tie.'
+   }
+   
+   if (document.myRandom == 2){
+   document.myOutcome = 'Your opponent plays scissors against your rock, you win!'
+   }
+   
+   if (document.myRandom == 3){
+   document.myOutcome = 'Your opponent plays paper against your rock, you lose!'
+   }
+   
+   document.getElementById('myOut').innerHTML = ' ' +
+       document.myOutcome
+}">
+
+
+
+
+<input type="image" id="myimage" src="Paper OC.png" width = 400 onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 3){
+   document.myOutcome = 'Your opponent plays paper against your paper, tie.'
+   }
+   
+   if (document.myRandom == 1){
+   document.myOutcome = 'Your opponent plays rock against your paper, you win!'
+   }
+   
+   if (document.myRandom == 2){
+   document.myOutcome = 'Your opponent plays scissors against your paper, you lose!'
+   }
+   
+   document.getElementById('myOut').innerHTML = ' ' +
+       document.myOutcome
+}">
+
+
+
+
+
+
+   <input type="image" id="myimage" src="sissor OC.png" width = 400 onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 2){
+   document.myOutcome = 'Your opponent plays scissors against your scissors, tie.'
+   }
+   
+   if (document.myRandom == 3){
+   document.myOutcome = 'Your opponent plays paper against your scissors, you win!'
+   }
+   
+   if (document.myRandom == 1){
+   document.myOutcome = 'Your opponent plays rock against your scissors, you lose!'
+   }
+   
+   document.getElementById('myOut').innerHTML = ' ' +
+       document.myOutcome
+}">
+
+
+
+

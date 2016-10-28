@@ -1,28 +1,42 @@
+T1A05-Array-Name.html
 
 
-t1a05-Array by Tommy <br>
 
+<font size=40>
+    
+    
+    T1A05-Array by Tommy <br>
+    
 <script>
-   
-  
-   
     myIntArray = new Array()
+
+    myIntArray[0] =    Math.floor(Math.random() * 888) + 111;   
+
+    document.writeln(myIntArray[0]+'<br> Now print all 10 <br>')
+  
+    myMin=9
+    for (myCount = 0;  myCount < myMin; myCount++){
+       myIntArray[myCount] =    Math.floor(Math.random() * 888) + 111; 
+       document.writeln(myCount + ' = ' + myIntArray[myCount] + '<br>')
+    }
     
-    myIntArray[0] = 357
-    myIntArray[1] = 179
-    myIntArray[2] = 34
-    myIntArray[3] = 763
-    myIntArray[4] = 991
-    myIntArray[5] = 837
-    myIntArray[6] = 779
-    myIntArray[8] = 104
-    myIntArray[7] = Math.floor(Math.random() * 888) + 111;
-    myIntArray[9] = 22
-       document.writeln(myIntArray[7]'<br> Now print all 10<br>')
+    document.writeln('<br> Now The hard part 100  numbers<br>')
     
-     for (myCount = 0; myCount <= 9; myCount++){
-        document.writeln(myCount + ' = ' + myIntArray[myCount] +'<br>')
-     }
+    document.writeln('<br> set the array<br>')
+    myMax = 100
+    for (myCount = 0;  myCount < myMax; myCount++){
+       
+        
+    }
+    
+    document.writeln('<br> Print the array<br>')
+    for (myCount = 0;  myCount < myMax; myCount++){
+       myIntArray[myCount] =    Math.floor(Math.random() * 888) + 111; 
+       document.writeln(myCount + ' = ' + myIntArray[myCount] + '<br>')
+    }
+    
+    
+    
     
     
 </script>
