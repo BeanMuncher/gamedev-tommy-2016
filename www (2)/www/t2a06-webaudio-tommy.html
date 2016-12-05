@@ -1,0 +1,38 @@
+
+
+<audio id="myAudio" audio controls preload="none">
+ <source src="pretty good.mp3"
+         type='audio/mp3'>
+ <source src="pretty good.mp3"
+         type='audio/ogg; codecs=vorbis'>
+</audio>
+<button type="button" onclick="aud_play_pause()">Pretty Good</button>
+<script>
+function aud_play_pause() {
+  var myAudio = document.getElementById("myAudio");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+</script>
+
+<br><br>
+<audio id="myAudio" audio controls preload="none">
+ <source src="Osteoporosis.mp3"
+         type='audio/mp3'>
+ <source src="Osteoporosis.mp3"
+         type='audio/ogg; codecs=vorbis'>
+</audio>
+<button type="button" onclick="aud_play_pause()">Osteoporosis</button>
+<script>
+function aud_play_pause() {
+  var myAudio = document.getElementById("myAudio");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+</script>

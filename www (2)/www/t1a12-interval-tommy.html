@@ -1,0 +1,57 @@
+<h1 align=center> T1A12-Interval by Tommy</h1>
+<script>
+function myFunction01(){
+    document.getElementById('myDiv1').style.left = 
+    parseInt(document.getElementById('myDiv1').style.left) + document.myRandom + 'px'
+    document.getElementById('myDiv1').style.top = 
+    parseInt(document.getElementById('myDiv1').style.top) + document.myRandomTop + 'px'
+    
+    document.myRandom = Math.floor(Math.random() * 100) - 50;
+    document.myRandomTop = Math.floor(Math.random() * 100) - 50;
+}    
+</script>
+
+
+
+
+<input type=button value=move onclick="{
+  myFunction01()
+}">
+
+
+
+
+<input type=button value="width" onclick="{
+  alert(document.getElementById('myDiv1').style.width)
+}">
+
+
+
+
+<input type=button value="setTimeout" onclick="{
+  document.myTime01 = setTimeout('myFunction01()', 500)
+}">
+
+
+
+<input type=button value="setInterval" onclick="{
+  setInterval(function(){ myFunction01() }, 100);
+}">
+
+
+
+
+<input type=button value="clearInterval" onclick="{
+  alert('get clearInterval working')
+}">
+
+
+
+
+
+
+
+
+<div id="myDiv1" style="position:relative; left:0px; top:0px; width:50px; height:40px; " >
+    wow
+</div>

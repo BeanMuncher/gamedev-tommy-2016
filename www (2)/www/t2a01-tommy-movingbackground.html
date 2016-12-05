@@ -1,0 +1,106 @@
+//T2A01-move-background-Fred
+
+
+
+
+
+
+<script> 
+
+
+myBgPosY = 0;     // present vertical position
+myBgPosX = 0;    // present horizonal position
+
+
+myBgHeight = 402;    // height of background image
+myBgWidth = 753;  // width of background image
+
+
+myBgSpeedYdown = 0;    // speed moving down 
+myBgSpeedXright = -2;    // speed moving right
+
+
+
+
+function myScroll() {
+
+
+   myBgPosY +=  myBgSpeedYdown;
+   myBgPosX +=  myBgSpeedXright;
+
+
+   myBgObject.style.backgroundPosition = myBgPosX + " " + myBgPosY;
+}
+
+
+</script>
+
+
+
+
+<body background="bkgrnd.png" onload="myTimer = setInterval('myScroll()', 1)" >
+
+
+<script>        // This object must be after the body tag
+   myBgObject = eval('document.body');
+</script>
+
+
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Birb</title>
+
+    <script type="text/javascript">
+
+            function leftArrowPressed() {
+            var element = document.getElementById("image1");
+            element.style.left = parseInt(element.style.left) - 5 + 'px';
+            }
+
+            function rightArrowPressed() {
+            var element = document.getElementById("image1");
+            element.style.left = parseInt(element.style.left) + 5 + 'px';
+
+            }
+
+            function upArrowPressed() {
+            var element = document.getElementById("image1");
+            element.style.top = parseInt(element.style.top) - 5 + 'px';
+            }
+
+            function downArrowPressed() {
+            var element = document.getElementById("image1");
+            element.style.top = parseInt(element.style.top) + 5 + 'px';
+            }
+
+            function moveSelection(evt) {
+                switch (evt.keyCode) {
+                    case 37:
+                    leftArrowPressed();
+                    break;
+                    case 39:
+                    rightArrowPressed();
+                    break;
+                    case 38:
+                    upArrowPressed();
+                    break;
+                    case 40:
+                    downArrowPressed();
+                    break;
+                    }
+                };
+
+        function docReady()
+        {
+          
+          window.addEventListener('keydown', moveSelection);
+        }
+
+  </script>
+  </head>
+
+  <body onload="docReady()" onkeydown="" onkeyup="">
+  <img id="image1" src="pepe.png " width=200 height=200 style="position:absolute;left:50; top:50;" height="15" width="15">
+  </body>
+</html>
